@@ -1,0 +1,145 @@
+.calculator-container {
+  width: 100%;
+  min-width: 20rem;
+  max-width: 100%;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px purple;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  overflow-x: auto;
+}
+
+.calculator-form {
+  margin-bottom: 1.2rem;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.calculator-form table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  table-layout: fixed;
+}
+
+.calculator-form th,
+.calculator-form td {
+  border: none;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calculator-form input {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.calculator-form td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.calculator-form tr:last-child td {
+  border-bottom: none;
+}
+
+.calculator-form th {
+  background: linear-gradient(135deg, plum, purple);
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.4rem;
+}
+
+.calculator-form tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.calculator-form tbody tr:hover {
+  background-color: #f8f9ff;
+}
+
+.calculator-form tbody tr:nth-child(even) {
+  background-color: #fafbff;
+}
+
+.calculate-button {
+  padding: 0.7rem 1.3rem;
+  background: darkmagenta;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  width: auto;
+  min-width: 160px;
+  margin: 1.2rem auto;
+  display: block;
+  letter-spacing: 0.3px;
+}
+
+.calculate-button:hover {
+  background: purple;
+}
+
+.calculate-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px plum;
+}
+
+.results-section {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background: rgb(255, 233, 255);
+  border-left: 5px solid plum;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.results-section h3 {
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background: plum;
+  border-left: 5px solid purple;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.results-section .result-item {
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #1a1a2e;
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  border-left: 5px solid purple;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
